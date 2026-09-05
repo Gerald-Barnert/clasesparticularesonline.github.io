@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clases de Cálculo Online en Chile | Cálculo Universitario</title>
+
+  <meta
+    name="description"
+    content="Clases de Cálculo online en Chile para estudiantes universitarios. Límites, derivadas, integrales, funciones y aplicaciones. Clases particulares personalizadas."
+  >
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Clases Particulares Online">
+
+  <link
+    rel="canonical"
+    href="https://gerald-barnert.github.io/clasesparticularesonline.github.io/clases-calculo.html"
+  >
+
+  <!-- Google Search Console -->
+  <meta
+    name="google-site-verification"
+    content="trkXQVca_o2BmpHGnjuod1X497x3cn2D8gHeMMtOu5c"
+  >
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Clases de Cálculo Online en Chile">
+  <meta
+    property="og:description"
+    content="Clases particulares de Cálculo online para estudiantes universitarios en Chile."
+  >
+  <meta
+    property="og:url"
+    content="https://gerald-barnert.github.io/clasesparticularesonline.github.io/clases-calculo.html"
+  >
+  <meta property="og:type" content="website">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Clases de Cálculo online",
+    "description": "Clases particulares de Cálculo online para estudiantes universitarios en Chile.",
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "Clases Particulares Online",
+      "url": "https://gerald-barnert.github.io/clasesparticularesonline.github.io/"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Chile"
+    },
+    "serviceType": "Clases particulares de Cálculo"
+  }
+  </script>
+
+  <style>
+
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text: #172033;
+      --muted: #64748b;
+      --background: #f8fafc;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --soft: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav a {
+      color: #475569;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav-button {
+      background: var(--primary);
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 9px;
+      font-weight: 600 !important;
+    }
+
+    .nav-button:hover {
+      background: var(--primary-dark);
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(circle at top right, #dbeafe, transparent 40%),
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      padding: 90px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--primary-dark);
+      border: 1px solid #bfdbfe;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: #94a3b8;
+    }
+
+    /* HERO CARD */
+
+    .hero-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero-card h2 {
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+    }
+
+    .check {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin: 15px 0;
+      color: #475569;
+    }
+
+    .check-icon {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .section-header h2 {
+      font-size: 2.3rem;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.025em;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* TOPICS */
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .topic {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 27px;
+      transition: 0.2s;
+    }
+
+    .topic:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(15,23,42,0.07);
+    }
+
+    .topic-number {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    .topic h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .topic p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* LEVELS */
+
+    .levels {
+      background: #ffffff;
+    }
+
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .level {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      background: var(--background);
+    }
+
+    .level h3 {
+      margin-bottom: 10px;
+    }
+
+    .level p {
+      color: var(--muted);
+    }
+
+    /* SEO CONTENT */
+
+    .content {
+      max-width: 850px;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .content h3 {
+      font-size: 1.35rem;
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      color: #475569;
+      margin-bottom: 17px;
+    }
+
+    .content ul {
+      margin: 10px 0 25px 22px;
+      color: #475569;
+    }
+
+    .content li {
+      margin-bottom: 8px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: #172033;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #cbd5e1;
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+
+    .cta .button-primary {
+      background: white;
+      color: var(--text);
+    }
+
+    .cta .button-primary:hover {
+      background: #f1f5f9;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 30px 0;
+      font-size: 0.9rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .topics,
+      .level-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav a:not(.nav-button) {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+
+      .topics,
+      .level-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.55rem;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a href="index.html" class="logo">
+        Clases<span>Online</span>
+      </a>
+
+      <nav>
+
+        <a href="index.html#asignaturas">
+          Asignaturas
+        </a>
+
+        <a href="index.html#como-funciona">
+          Cómo funciona
+        </a>
+
+        <a href="index.html#preguntas">
+          Preguntas
+        </a>
+
+        <a
+          href="mailto:TUEMAIL@EJEMPLO.COM"
+          class="nav-button"
+        >
+          Solicitar una clase
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <span class="badge">
+            Cálculo · Chile
+          </span>
+
+          <h1>
+            Clases de Cálculo online
+          </h1>
+
+          <p>
+            Clases particulares de Cálculo online para estudiantes
+            universitarios en Chile. Trabaja límites, derivadas,
+            integrales, funciones y aplicaciones con explicaciones
+            claras y ejercicios paso a paso.
+          </p>
+
+          <div class="buttons">
+
+            <a
+              href="mailto:TUEMAIL@EJEMPLO.COM"
+              class="button button-primary"
+            >
+              Solicitar una clase
+            </a>
+
+            <a
+              href="index.html"
+              class="button button-secondary"
+            >
+              Volver al inicio
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <h2>
+            ¿Qué puedes trabajar?
+          </h2>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Límites y continuidad</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Derivadas y aplicaciones</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Integrales y técnicas de integración</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Funciones y análisis de gráficas</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Preparación de pruebas y exámenes</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TOPICS -->
+
+    <section id="contenidos">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            Contenidos de Cálculo
+          </h2>
+
+          <p>
+            Puedes enfocar las clases en una materia específica,
+            preparar una evaluación o repasar los fundamentos
+            necesarios para avanzar en el curso.
+          </p>
+
+        </div>
+
+
+        <div class="topics">
+
+          <article class="topic">
+
+            <div class="topic-number">01</div>
+
+            <h3>Límites</h3>
+
+            <p>
+              Concepto de límite, cálculo de límites, límites laterales,
+              infinitos y aplicaciones.
+            </p>
+
+          </article>
+
+
+          <article class="topic">
+
+            <div class="topic-number">02</div>
+
+            <h3>Continuidad</h3>
+
+            <p>
+              Funciones continuas, discontinuidades y análisis del
+              comportamiento de funciones.
+            </p>
+
+          </article>
+
+
+          <article class="topic">
+
+            <div class="topic-number">03</div>
+
+            <h3>Derivadas</h3>
+
+            <p>
+              Definición de derivada, reglas de derivación,
+              derivación de funciones y problemas de aplicación.
+            </p>
+
+          </article>
+
+
+          <article class="topic">
+
+            <div class="topic-number">04</div>
+
+            <h3>Aplicaciones de la derivada</h3>
+
+            <p>
+              Máximos y mínimos, crecimiento y decrecimiento,
+              optimización y análisis de funciones.
+            </p>
+
+          </article>
+
+
+          <article class="topic">
+
+            <div class="topic-number">05</div>
+
+            <h3>Integrales</h3>
+
+            <p>
+              Integrales indefinidas y definidas, primitivas y
+              cálculo de áreas.
+            </p>
+
+          </article>
+
+
+          <article class="topic">
+
+            <div class="topic-number">06</div>
+
+            <h3>Técnicas de integración</h3>
+
+            <p>
+              Sustitución, integración por partes y otras técnicas
+              utilizadas en cursos universitarios.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEVELS -->
+
+    <section class="levels">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            Cálculo para estudiantes universitarios
+          </h2>
+
+          <p>
+            Las clases se pueden adaptar al programa, nivel y objetivos
+            del estudiante.
+          </p>
+
+        </div>
+
+
+        <div class="level-grid">
+
+          <article class="level">
+
+            <h3>Cálculo I</h3>
+
+            <p>
+              Funciones, límites, continuidad, derivadas e introducción
+              a las integrales.
+            </p>
+
+          </article>
+
+
+          <article class="level">
+
+            <h3>Cálculo II</h3>
+
+            <p>
+              Integración, técnicas de integración, aplicaciones y
+              contenidos de cálculo de nivel intermedio.
+            </p>
+
+          </article>
+
+
+          <article class="level">
+
+            <h3>Repaso y preparación</h3>
+
+            <p>
+              Preparación para controles, pruebas, exámenes y
+              recuperación de contenidos.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SEO CONTENT -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="content">
+
+          <h2>
+            Clases de Cálculo online en Chile
+          </h2>
+
+          <p>
+            El Cálculo es una de las asignaturas fundamentales de
+            numerosas carreras universitarias. Las clases particulares
+            online permiten trabajar directamente los contenidos que
+            necesitas reforzar y avanzar a tu propio ritmo.
+          </p>
+
+          <p>
+            Las clases pueden centrarse tanto en comprender la teoría
+            como en resolver ejercicios. Esto permite conectar los
+            conceptos matemáticos con los procedimientos necesarios para
+            resolver problemas.
+          </p>
+
+
+          <h3>
+            Clases de derivadas
+          </h3>
+
+          <p>
+            Las derivadas son uno de los contenidos centrales de Cálculo.
+            Se pueden trabajar desde la definición y las reglas básicas
+            hasta sus aplicaciones en el análisis y optimización de
+            funciones.
+          </p>
+
+
+          <h3>
+            Clases de integrales
+          </h3>
+
+          <p>
+            Las integrales pueden abordarse desde el concepto de
+            primitiva e integral definida hasta diferentes técnicas de
+            integración y sus aplicaciones.
+          </p>
+
+
+          <h3>
+            Preparación de pruebas de Cálculo
+          </h3>
+
+          <p>
+            Si tienes una prueba o examen próximo, las clases pueden
+            enfocarse en revisar los contenidos del curso, identificar
+            dificultades y practicar ejercicios similares a los que
+            necesitas resolver.
+          </p>
+
+
+          <h3>
+            ¿Por qué estudiar Cálculo online?
+          </h3>
+
+          <p>
+            Las clases online permiten estudiar desde cualquier lugar de
+            Chile sin necesidad de desplazarse. Puedes trabajar con
+            apuntes, ejercicios, gráficos y material digital durante la
+            clase.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <h2>
+          ¿Necesitas ayuda con Cálculo?
+        </h2>
+
+        <p>
+          Solicita información sobre las clases particulares online y
+          cuéntame qué contenidos necesitas trabajar.
+        </p>
+
+        <a
+          href="mailto:TUEMAIL@EJEMPLO.COM"
+          class="button button-primary"
+        >
+          Solicitar una clase
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+        © 2026 Clases Particulares Online
+      </div>
+
+      <div class="footer-links">
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="clases-particulares-fisica.html">
+          Física
+        </a>
+
+        <a href="clases-particulares-matematicas.html">
+          Matemáticas
+        </a>
+
+        <a href="clases-calculo.html">
+          Cálculo
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
