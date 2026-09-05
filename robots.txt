@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gerald-barnert.github.io/clasesparticularesonline.github.io/sitemap.xml
