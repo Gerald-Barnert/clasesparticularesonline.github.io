@@ -5,45 +5,156 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Search Console -->
+    <!-- =====================================================
+         GOOGLE SEARCH CONSOLE
+    ====================================================== -->
     <meta name="google-site-verification"
-          content="trkXQVca_o2BmpHGnjuod1X497x3cn2D8gHeMMtOu5c" />
+          content="trkXQVca_o2BmpHGnjuod1X497x3cn2D8gHeMMtOu5c">
 
-    <!-- SEO -->
+
+    <!-- =====================================================
+         SEO
+    ====================================================== -->
+
     <title>Clases Particulares Online en Chile | Física y Matemáticas</title>
 
     <meta name="description"
-          content="Clases particulares online en Chile de Física, Matemáticas, Cálculo y preparación PAES. Aprende con clases personalizadas adaptadas a tus objetivos.">
+          content="Clases particulares online en Chile de Física, Matemáticas, Cálculo y preparación PAES. Clases personalizadas para estudiantes escolares y universitarios.">
 
-    <meta name="keywords"
-          content="clases particulares online, clases particulares Chile, clases de física, clases de matemáticas, profesor de física, profesor de matemáticas, física PAES, matemáticas PAES, clases universitarias">
+    <meta name="robots"
+          content="index, follow">
 
-    <meta name="author" content="Clases Particulares Online">
+    <meta name="author"
+          content="Clases Particulares Online">
 
-    <!-- Google / Search -->
-    <meta name="robots" content="index, follow">
+    <link rel="canonical"
+          href="https://gerald-barnert.github.io/clasesparticularesonline.github.io/">
 
-    <!-- Open Graph -->
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:type"
+          content="website">
+
     <meta property="og:title"
           content="Clases Particulares Online en Chile">
 
     <meta property="og:description"
-          content="Clases particulares online de Física, Matemáticas y preparación PAES para estudiantes en Chile.">
-
-    <meta property="og:type" content="website">
+          content="Clases online personalizadas de Física, Matemáticas, Cálculo y preparación PAES para estudiantes en Chile.">
 
     <meta property="og:url"
           content="https://gerald-barnert.github.io/clasesparticularesonline.github.io/">
 
-    <!-- Favicon -->
+    <meta property="og:locale"
+          content="es_CL">
+
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
     <link rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+
+
+    <!-- =====================================================
+         STRUCTURED DATA
+         Schema.org
+    ====================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Clases Particulares Online",
+        "description": "Clases particulares online de Física, Matemáticas, Cálculo y preparación PAES para estudiantes en Chile.",
+        "url": "https://gerald-barnert.github.io/clasesparticularesonline.github.io/",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        },
+        "sameAs": []
+    }
+    </script>
+
+
+    <!-- =====================================================
+         FAQ STRUCTURED DATA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Las clases particulares son completamente online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Las clases se realizan completamente online, por lo que puedes estudiar desde cualquier lugar de Chile."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué asignaturas se pueden estudiar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Actualmente se ofrecen clases de Física, Matemáticas, Cálculo y preparación PAES."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Las clases están dirigidas a estudiantes universitarios?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Las clases pueden adaptarse tanto a estudiantes escolares como a estudiantes universitarios."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Las clases se pueden adaptar al nivel del estudiante?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. El contenido, ritmo y nivel de las clases se adapta a los objetivos y necesidades de cada estudiante."
+                }
+            }
+        ]
+    }
+    </script>
+
+
+    <!-- =====================================================
+         STYLES
+    ====================================================== -->
 
     <style>
 
-        /* =========================
-           GENERAL
-        ========================= */
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #eff6ff;
+
+            --dark: #0f172a;
+            --text: #334155;
+            --muted: #64748b;
+
+            --border: #e2e8f0;
+            --background: #f8fafc;
+            --white: #ffffff;
+
+            --radius: 16px;
+
+            --shadow:
+                0 10px 35px rgba(15, 23, 42, 0.07);
+        }
+
+
+        /* =====================================================
+           RESET
+        ====================================================== */
 
         * {
             margin: 0;
@@ -57,6 +168,9 @@
 
         body {
             font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
                 -apple-system,
                 BlinkMacSystemFont,
                 "Segoe UI",
@@ -65,39 +179,58 @@
                 Arial,
                 sans-serif;
 
-            color: #172033;
-            background: #ffffff;
-            line-height: 1.6;
+            color: var(--text);
+            background: var(--white);
+
+            line-height: 1.65;
+
+            -webkit-font-smoothing: antialiased;
         }
 
         a {
-            text-decoration: none;
             color: inherit;
+            text-decoration: none;
         }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        button {
+            font: inherit;
+        }
+
+
+        /* =====================================================
+           CONTAINER
+        ====================================================== */
 
         .container {
-            width: min(1120px, 92%);
-            margin: auto;
+            width: min(1160px, 92%);
+            margin: 0 auto;
         }
 
 
-        /* =========================
-           NAVIGATION
-        ========================= */
+        /* =====================================================
+           HEADER
+        ====================================================== */
 
         header {
             position: sticky;
             top: 0;
             z-index: 1000;
 
-            background: rgba(255,255,255,0.96);
-            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.94);
 
-            border-bottom: 1px solid #e9edf3;
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(226,232,240,0.8);
         }
 
         nav {
-            min-height: 72px;
+            min-height: 74px;
 
             display: flex;
             align-items: center;
@@ -107,459 +240,761 @@
         .logo {
             font-size: 1.25rem;
             font-weight: 800;
+
             letter-spacing: -0.5px;
+
+            color: var(--dark);
         }
 
         .logo span {
-            color: #2563eb;
+            color: var(--primary);
         }
 
         .nav-links {
             display: flex;
-            gap: 28px;
             align-items: center;
+            gap: 28px;
 
             font-size: 0.95rem;
-            font-weight: 500;
+            font-weight: 600;
+
+            color: var(--muted);
         }
 
         .nav-links a {
-            color: #4b5563;
-            transition: color 0.2s ease;
+            transition: color .2s ease;
         }
 
         .nav-links a:hover {
-            color: #2563eb;
+            color: var(--primary);
         }
 
-        .nav-button {
-            background: #2563eb;
+        .nav-cta {
             color: white !important;
 
-            padding: 10px 18px;
-            border-radius: 8px;
+            background: var(--primary);
 
-            font-weight: 600;
+            padding: 10px 17px;
+
+            border-radius: 9px;
         }
 
-        .nav-button:hover {
-            background: #1d4ed8;
+        .nav-cta:hover {
+            background: var(--primary-dark);
         }
 
 
-        /* =========================
+        /* =====================================================
            HERO
-        ========================= */
+        ====================================================== */
 
         .hero {
+            position: relative;
+            overflow: hidden;
+
+            padding: 110px 0 105px;
+
             background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    #dbeafe 0,
+                    transparent 28%
+                ),
                 linear-gradient(
                     135deg,
                     #f8fbff 0%,
                     #eef5ff 100%
                 );
-
-            padding: 100px 0 90px;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
         }
 
-        .badge {
-            display: inline-block;
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 7px 13px;
+
+            margin-bottom: 24px;
+
+            border-radius: 999px;
 
             background: #dbeafe;
             color: #1d4ed8;
 
-            padding: 7px 13px;
-            border-radius: 999px;
-
-            font-size: 0.85rem;
-            font-weight: 700;
-
-            margin-bottom: 20px;
+            font-size: .84rem;
+            font-weight: 800;
         }
 
-        h1 {
-            font-size: clamp(2.5rem, 6vw, 4.6rem);
-            line-height: 1.05;
+        .hero h1 {
+            max-width: 900px;
 
-            letter-spacing: -2.5px;
+            color: var(--dark);
 
-            margin-bottom: 25px;
+            font-size: clamp(2.7rem, 7vw, 5.2rem);
+
+            line-height: 1.02;
+
+            letter-spacing: -3.5px;
+
+            margin-bottom: 26px;
         }
 
         .hero h1 span {
-            color: #2563eb;
+            color: var(--primary);
         }
 
         .hero-description {
-            max-width: 680px;
+            max-width: 730px;
 
             font-size: 1.2rem;
-            color: #4b5563;
 
-            margin-bottom: 35px;
+            color: var(--muted);
+
+            margin-bottom: 36px;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 15px;
             flex-wrap: wrap;
+            gap: 14px;
         }
 
-        .primary-button {
-            background: #2563eb;
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 50px;
+
+            padding: 0 22px;
+
+            border-radius: 10px;
+
+            font-weight: 750;
+
+            transition:
+                transform .2s ease,
+                background .2s ease,
+                border-color .2s ease;
+        }
+
+        .button-primary {
+            background: var(--primary);
             color: white;
 
-            padding: 14px 25px;
-            border-radius: 9px;
-
-            font-weight: 700;
-
-            transition: all 0.2s ease;
+            box-shadow:
+                0 8px 20px rgba(37,99,235,.2);
         }
 
-        .primary-button:hover {
-            background: #1d4ed8;
+        .button-primary:hover {
+            background: var(--primary-dark);
             transform: translateY(-2px);
         }
 
-        .secondary-button {
-            border: 1px solid #cbd5e1;
+        .button-secondary {
             background: white;
 
-            padding: 14px 25px;
-            border-radius: 9px;
+            color: var(--dark);
 
-            font-weight: 700;
-
-            color: #334155;
+            border: 1px solid var(--border);
         }
 
-        .secondary-button:hover {
-            border-color: #2563eb;
-            color: #2563eb;
+        .button-secondary:hover {
+            border-color: #bfdbfe;
+            color: var(--primary);
         }
 
 
-        /* =========================
-           SECTIONS
-        ========================= */
+        /* =====================================================
+           TRUST STRIP
+        ====================================================== */
+
+        .trust {
+            border-bottom: 1px solid var(--border);
+
+            background: white;
+        }
+
+        .trust-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 30px;
+
+            padding: 25px 0;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 10px;
+
+            text-align: center;
+
+            font-size: .92rem;
+            font-weight: 650;
+
+            color: #475569;
+        }
+
+        .trust-icon {
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+
+
+        /* =====================================================
+           GENERAL SECTIONS
+        ====================================================== */
 
         section {
-            padding: 90px 0;
+            padding: 100px 0;
         }
 
-        .section-header {
+        .section-heading {
+            max-width: 720px;
+
+            margin: 0 auto 55px;
+
             text-align: center;
-            max-width: 700px;
-            margin: 0 auto 50px;
         }
 
-        .section-header h2 {
+        .section-label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: var(--primary);
+
+            font-size: .8rem;
+            font-weight: 850;
+
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+        }
+
+        .section-heading h2 {
+            color: var(--dark);
+
             font-size: clamp(2rem, 4vw, 3rem);
 
-            letter-spacing: -1px;
+            line-height: 1.1;
 
-            margin-bottom: 15px;
+            letter-spacing: -1.5px;
+
+            margin-bottom: 17px;
         }
 
-        .section-header p {
-            color: #64748b;
+        .section-heading p {
+            color: var(--muted);
+
             font-size: 1.05rem;
         }
 
 
-        /* =========================
+        /* =====================================================
            SUBJECTS
-        ========================= */
+        ====================================================== */
 
         .subjects {
-            background: #ffffff;
+            background: white;
         }
 
         .subject-grid {
             display: grid;
 
-            grid-template-columns:
-                repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
 
             gap: 20px;
         }
 
         .subject-card {
-            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
 
-            border-radius: 14px;
+            min-height: 250px;
 
-            padding: 30px 25px;
+            padding: 30px 27px;
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
 
             background: white;
 
             transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease,
-                border-color 0.2s ease;
+                transform .25s ease,
+                box-shadow .25s ease,
+                border-color .25s ease;
         }
 
         .subject-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
 
             border-color: #bfdbfe;
 
-            box-shadow:
-                0 15px 35px rgba(15, 23, 42, 0.08);
+            box-shadow: var(--shadow);
         }
 
         .subject-icon {
-            font-size: 2rem;
-            margin-bottom: 18px;
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 23px;
+
+            border-radius: 13px;
+
+            background: var(--primary-light);
+
+            font-size: 1.55rem;
         }
 
         .subject-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
+            color: var(--dark);
+
+            font-size: 1.25rem;
+
+            margin-bottom: 9px;
         }
 
         .subject-card p {
-            color: #64748b;
-            font-size: 0.95rem;
+            color: var(--muted);
+
+            font-size: .94rem;
+
+            margin-bottom: 20px;
+        }
+
+        .subject-link {
+            margin-top: auto;
+
+            color: var(--primary);
+
+            font-size: .9rem;
+            font-weight: 750;
         }
 
 
-        /* =========================
-           WHY US
-        ========================= */
+        /* =====================================================
+           SEO CONTENT
+        ====================================================== */
 
-        .why {
-            background: #f8fafc;
+        .seo-section {
+            background: var(--background);
+        }
+
+        .seo-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .seo-content h2 {
+            color: var(--dark);
+
+            font-size: 2rem;
+
+            margin-bottom: 20px;
+        }
+
+        .seo-content h3 {
+            color: var(--dark);
+
+            font-size: 1.3rem;
+
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+
+        .seo-content p {
+            color: #475569;
+
+            margin-bottom: 15px;
+        }
+
+        .seo-content strong {
+            color: #1e293b;
+        }
+
+
+        /* =====================================================
+           FEATURES
+        ====================================================== */
+
+        .features-section {
+            background: white;
         }
 
         .features {
             display: grid;
 
-            grid-template-columns:
-                repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
             gap: 25px;
         }
 
         .feature {
+            padding: 32px 25px;
+
             text-align: center;
-            padding: 25px;
+
+            border-radius: var(--radius);
+
+            background: #f8fafc;
         }
 
         .feature-icon {
             width: 58px;
             height: 58px;
 
-            margin: 0 auto 20px;
-
             display: flex;
             align-items: center;
             justify-content: center;
 
-            background: #dbeafe;
-            color: #2563eb;
+            margin: 0 auto 20px;
 
             border-radius: 50%;
 
-            font-size: 1.5rem;
+            background: #dbeafe;
+
+            color: var(--primary);
+
+            font-size: 1.45rem;
+            font-weight: 800;
         }
 
         .feature h3 {
+            color: var(--dark);
+
             margin-bottom: 10px;
         }
 
         .feature p {
-            color: #64748b;
+            color: var(--muted);
+
+            font-size: .94rem;
         }
 
 
-        /* =========================
+        /* =====================================================
            HOW IT WORKS
-        ========================= */
+        ====================================================== */
+
+        .steps-section {
+            background: var(--background);
+        }
 
         .steps {
             display: grid;
 
-            grid-template-columns:
-                repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
-            gap: 30px;
+            gap: 25px;
         }
 
         .step {
-            position: relative;
-
             padding: 30px;
 
-            border: 1px solid #e5e7eb;
+            background: white;
 
-            border-radius: 14px;
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
         }
 
         .step-number {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
+            margin-bottom: 20px;
+
             border-radius: 50%;
 
-            background: #2563eb;
+            background: var(--primary);
+
             color: white;
 
             font-weight: 800;
-
-            margin-bottom: 20px;
         }
 
         .step h3 {
+            color: var(--dark);
+
             margin-bottom: 10px;
         }
 
         .step p {
-            color: #64748b;
+            color: var(--muted);
+
+            font-size: .94rem;
         }
 
 
-        /* =========================
+        /* =====================================================
+           FAQ
+        ====================================================== */
+
+        .faq {
+            max-width: 800px;
+
+            margin: auto;
+        }
+
+        details {
+            padding: 20px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        summary {
+            cursor: pointer;
+
+            color: var(--dark);
+
+            font-weight: 750;
+
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "+";
+
+            float: right;
+
+            color: var(--primary);
+
+            font-size: 1.3rem;
+        }
+
+        details[open] summary::after {
+            content: "−";
+        }
+
+        details p {
+            padding-top: 12px;
+
+            color: var(--muted);
+
+            font-size: .95rem;
+        }
+
+
+        /* =====================================================
            CTA
-        ========================= */
+        ====================================================== */
 
         .cta {
-            background: #172033;
+            background:
+                linear-gradient(
+                    135deg,
+                    #172554,
+                    #1e3a8a
+                );
+
             color: white;
 
             text-align: center;
         }
 
+        .cta-content {
+            max-width: 700px;
+
+            margin: auto;
+        }
+
         .cta h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
+            font-size: clamp(2rem, 4vw, 3.2rem);
 
-            margin-bottom: 15px;
+            line-height: 1.1;
 
-            letter-spacing: -1px;
+            letter-spacing: -1.5px;
+
+            margin-bottom: 17px;
         }
 
         .cta p {
-            max-width: 600px;
+            color: #dbeafe;
 
-            margin: 0 auto 30px;
-
-            color: #cbd5e1;
+            margin-bottom: 30px;
 
             font-size: 1.05rem;
         }
 
-        .cta .primary-button {
-            display: inline-block;
+        .cta .button-primary {
+            background: white;
+
+            color: #1d4ed8;
+
+            box-shadow: none;
+        }
+
+        .cta .button-primary:hover {
+            background: #eff6ff;
         }
 
 
-        /* =========================
+        /* =====================================================
            FOOTER
-        ========================= */
+        ====================================================== */
 
         footer {
-            background: #0f172a;
+            background: #0b1120;
 
             color: #94a3b8;
 
-            padding: 35px 0;
+            padding: 42px 0;
         }
 
-        .footer-content {
-            display: flex;
+        .footer-grid {
+            display: grid;
 
-            justify-content: space-between;
-            align-items: center;
+            grid-template-columns: 2fr 1fr 1fr;
 
-            gap: 20px;
+            gap: 50px;
+        }
+
+        .footer-brand {
+            max-width: 390px;
         }
 
         .footer-logo {
             color: white;
+
+            font-size: 1.15rem;
             font-weight: 800;
+
+            margin-bottom: 12px;
         }
 
-        .footer-small {
-            font-size: 0.85rem;
+        .footer-brand p {
+            font-size: .9rem;
+        }
+
+        .footer-column h3 {
+            color: white;
+
+            font-size: .9rem;
+
+            margin-bottom: 15px;
+        }
+
+        .footer-column a {
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-size: .88rem;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 25px;
+
+            border-top: 1px solid #1e293b;
+
+            font-size: .82rem;
         }
 
 
-        /* =========================
+        /* =====================================================
            MOBILE
-        ========================= */
+        ====================================================== */
 
-        @media (max-width: 850px) {
+        @media (max-width: 950px) {
+
+            .subject-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 650px) {
 
             .nav-links {
                 display: none;
             }
 
-            .subject-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
-            }
-
-            .features {
-                grid-template-columns: 1fr;
-            }
-
-            .steps {
-                grid-template-columns: 1fr;
-            }
-
             .hero {
-                padding: 75px 0;
+                padding: 75px 0 70px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 1.05rem;
             }
 
             section {
                 padding: 70px 0;
             }
-        }
-
-        @media (max-width: 550px) {
 
             .subject-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
             }
 
             .hero-buttons {
                 flex-direction: column;
             }
 
-            .primary-button,
-            .secondary-button {
-                text-align: center;
+            .button {
+                width: 100%;
             }
 
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            h1 {
-                letter-spacing: -1.5px;
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
             }
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- =====================================================
+     HEADER
+====================================================== -->
 
 <header>
 
@@ -581,7 +1016,11 @@
                     Cómo funciona
                 </a>
 
-                <a href="#contacto" class="nav-button">
+                <a href="#preguntas">
+                    Preguntas
+                </a>
+
+                <a href="#contacto" class="nav-cta">
                     Solicitar una clase
                 </a>
 
@@ -594,12 +1033,16 @@
 </header>
 
 
-
-<!-- =========================
-     HERO
-========================= -->
+<!-- =====================================================
+     MAIN
+====================================================== -->
 
 <main>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
 
 <section class="hero">
 
@@ -607,19 +1050,19 @@
 
         <div class="hero-content">
 
-            <div class="badge">
+            <div class="eyebrow">
                 🇨🇱 Clases online para estudiantes en Chile
             </div>
 
             <h1>
                 Clases particulares
                 <span>online</span>
-                para aprender de verdad.
+                hechas para ti.
             </h1>
 
             <p class="hero-description">
-                Clases personalizadas de Física, Matemáticas,
-                Cálculo y preparación PAES, adaptadas a tu nivel,
+                Aprende Física, Matemáticas, Cálculo y otros contenidos
+                con clases particulares online adaptadas a tu nivel,
                 tus objetivos y tu ritmo de aprendizaje.
             </p>
 
@@ -627,16 +1070,16 @@
 
                 <a
                     href="#contacto"
-                    class="primary-button"
+                    class="button button-primary"
                 >
                     Solicitar una clase
                 </a>
 
                 <a
                     href="#asignaturas"
-                    class="secondary-button"
+                    class="button button-secondary"
                 >
-                    Ver asignaturas
+                    Explorar asignaturas
                 </a>
 
             </div>
@@ -648,24 +1091,59 @@
 </section>
 
 
+<!-- =====================================================
+     TRUST
+====================================================== -->
 
-<!-- =========================
+<section class="trust">
+
+    <div class="container">
+
+        <div class="trust-grid">
+
+            <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                Clases 100% online
+            </div>
+
+            <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                Atención personalizada
+            </div>
+
+            <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                Desde cualquier lugar de Chile
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
      SUBJECTS
-========================= -->
+====================================================== -->
 
 <section id="asignaturas" class="subjects">
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="section-heading">
+
+            <span class="section-label">
+                Asignaturas
+            </span>
 
             <h2>
-                Clases para cada objetivo
+                Encuentra la clase que necesitas
             </h2>
 
             <p>
-                Aprende con clases individuales enfocadas
-                en lo que realmente necesitas.
+                Refuerza contenidos, prepara una evaluación,
+                mejora tus resultados o profundiza en una materia.
             </p>
 
         </div>
@@ -673,6 +1151,8 @@
 
         <div class="subject-grid">
 
+
+            <!-- FISICA -->
 
             <article class="subject-card">
 
@@ -685,14 +1165,22 @@
                 </h3>
 
                 <p>
-                    Mecánica, electricidad, ondas,
-                    termodinámica y otros contenidos
+                    Mecánica, dinámica, energía, electricidad,
+                    ondas, termodinámica y otros contenidos
                     de Física.
                 </p>
+
+                <a
+                    href="clases-particulares-fisica.html"
+                    class="subject-link"
+                >
+                    Ver clases de Física →
+                </a>
 
             </article>
 
 
+            <!-- MATEMATICAS -->
 
             <article class="subject-card">
 
@@ -705,19 +1193,26 @@
                 </h3>
 
                 <p>
-                    Álgebra, geometría, funciones,
-                    trigonometría y resolución
-                    de problemas.
+                    Álgebra, funciones, geometría,
+                    trigonometría y resolución de problemas.
                 </p>
+
+                <a
+                    href="clases-particulares-matematicas.html"
+                    class="subject-link"
+                >
+                    Ver clases de Matemáticas →
+                </a>
 
             </article>
 
 
+            <!-- CALCULO -->
 
             <article class="subject-card">
 
                 <div class="subject-icon">
-                    📊
+                    ∫
                 </div>
 
                 <h3>
@@ -725,13 +1220,21 @@
                 </h3>
 
                 <p>
-                    Límites, derivadas, integrales,
-                    series y cálculo universitario.
+                    Límites, derivadas, integrales, series
+                    y contenidos de cálculo universitario.
                 </p>
+
+                <a
+                    href="clases-calculo.html"
+                    class="subject-link"
+                >
+                    Ver clases de Cálculo →
+                </a>
 
             </article>
 
 
+            <!-- PAES -->
 
             <article class="subject-card">
 
@@ -745,9 +1248,15 @@
 
                 <p>
                     Preparación enfocada en contenidos,
-                    ejercicios y estrategias para
-                    la PAES.
+                    ejercicios y resolución de problemas.
                 </p>
+
+                <a
+                    href="preparacion-paes.html"
+                    class="subject-link"
+                >
+                    Ver preparación PAES →
+                </a>
 
             </article>
 
@@ -759,24 +1268,100 @@
 </section>
 
 
+<!-- =====================================================
+     SEO CONTENT
+====================================================== -->
 
-<!-- =========================
-     WHY
-========================= -->
-
-<section class="why">
+<section class="seo-section">
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="seo-content">
+
+            <span class="section-label">
+                Clases online en Chile
+            </span>
 
             <h2>
-                ¿Por qué clases particulares?
+                Clases particulares online en Chile
             </h2>
 
             <p>
-                Una clase individual permite concentrarse
-                exactamente en las dificultades de cada estudiante.
+                Las <strong>clases particulares online</strong> permiten
+                estudiar desde cualquier lugar de Chile y trabajar
+                directamente los contenidos que cada estudiante necesita.
+                La modalidad online elimina los desplazamientos y permite
+                organizar las clases de forma flexible.
+            </p>
+
+            <p>
+                Las clases están pensadas tanto para estudiantes de
+                enseñanza escolar como para quienes necesitan apoyo en
+                asignaturas universitarias. El objetivo es comprender
+                los conceptos, desarrollar estrategias para resolver
+                problemas y avanzar de acuerdo con el nivel de cada estudiante.
+            </p>
+
+            <h3>
+                Clases particulares de Física
+            </h3>
+
+            <p>
+                Puedes reforzar contenidos de Física escolar o universitaria,
+                preparar evaluaciones y trabajar problemas paso a paso.
+                Las clases pueden adaptarse a temas específicos como
+                mecánica, dinámica, energía, electricidad, ondas y
+                termodinámica.
+            </p>
+
+            <h3>
+                Clases particulares de Matemáticas
+            </h3>
+
+            <p>
+                Las clases de Matemáticas pueden enfocarse en reforzamiento
+                escolar, preparación de pruebas, resolución de ejercicios
+                o contenidos universitarios como álgebra y cálculo.
+            </p>
+
+            <h3>
+                Preparación PAES
+            </h3>
+
+            <p>
+                La preparación puede centrarse en comprender los contenidos,
+                practicar ejercicios y desarrollar métodos para abordar
+                distintos tipos de problemas de la prueba.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURES
+====================================================== -->
+
+<section class="features-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Aprendizaje personalizado
+            </span>
+
+            <h2>
+                Más que resolver ejercicios
+            </h2>
+
+            <p>
+                El objetivo es que puedas entender lo que estás estudiando
+                y desarrollar herramientas que puedas utilizar por tu cuenta.
             </p>
 
         </div>
@@ -796,12 +1381,11 @@
                 </h3>
 
                 <p>
-                    El contenido y ritmo de cada clase
-                    se adapta a tus necesidades.
+                    El nivel, contenido y ritmo se adapta
+                    a las necesidades de cada estudiante.
                 </p>
 
             </div>
-
 
 
             <div class="feature">
@@ -815,12 +1399,11 @@
                 </h3>
 
                 <p>
-                    Estudia desde cualquier lugar de Chile
-                    sin necesidad de desplazarte.
+                    Estudia desde tu casa o desde cualquier
+                    lugar de Chile.
                 </p>
 
             </div>
-
 
 
             <div class="feature">
@@ -830,12 +1413,12 @@
                 </div>
 
                 <h3>
-                    Enfocado en tus objetivos
+                    Orientadas a objetivos
                 </h3>
 
                 <p>
-                    Reforzamiento, preparación de pruebas,
-                    PAES o contenidos universitarios.
+                    Reforzamiento, pruebas, PAES o
+                    asignaturas universitarias.
                 </p>
 
             </div>
@@ -848,23 +1431,26 @@
 </section>
 
 
-
-<!-- =========================
+<!-- =====================================================
      HOW IT WORKS
-========================= -->
+====================================================== -->
 
-<section id="como-funciona">
+<section id="como-funciona" class="steps-section">
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="section-heading">
+
+            <span class="section-label">
+                Cómo funciona
+            </span>
 
             <h2>
-                ¿Cómo funciona?
+                Comenzar es sencillo
             </h2>
 
             <p>
-                Comenzar es sencillo.
+                Tres pasos para comenzar a trabajar en tus objetivos.
             </p>
 
         </div>
@@ -880,16 +1466,15 @@
                 </div>
 
                 <h3>
-                    Cuéntame qué necesitas
+                    Cuéntanos qué necesitas
                 </h3>
 
                 <p>
-                    Indica la asignatura, tu nivel y
-                    qué contenidos quieres trabajar.
+                    Indica la asignatura, tu nivel y los contenidos
+                    que quieres trabajar.
                 </p>
 
             </div>
-
 
 
             <div class="step">
@@ -903,12 +1488,11 @@
                 </h3>
 
                 <p>
-                    Buscamos un horario conveniente
-                    y coordinamos la modalidad online.
+                    Buscamos un horario conveniente y coordinamos
+                    la modalidad de la clase online.
                 </p>
 
             </div>
-
 
 
             <div class="step">
@@ -918,12 +1502,12 @@
                 </div>
 
                 <h3>
-                    Aprende
+                    Aprende y practica
                 </h3>
 
                 <p>
-                    Trabajamos juntos los contenidos
-                    y ejercicios que necesitas dominar.
+                    Trabajamos los conceptos y ejercicios necesarios
+                    para avanzar hacia tu objetivo.
                 </p>
 
             </div>
@@ -936,58 +1520,213 @@
 </section>
 
 
+<!-- =====================================================
+     FAQ
+====================================================== -->
 
-<!-- =========================
-     CTA
-========================= -->
-
-<section id="contacto" class="cta">
+<section id="preguntas">
 
     <div class="container">
 
-        <h2>
-            ¿Necesitas ayuda con una asignatura?
-        </h2>
+        <div class="section-heading">
 
-        <p>
-            Cuéntame qué estás estudiando y qué necesitas
-            mejorar. Podemos encontrar la mejor forma
-            de trabajar juntos.
-        </p>
+            <span class="section-label">
+                Preguntas frecuentes
+            </span>
 
-        <!-- Cambia este enlace por tu email o formulario -->
-        <a
-            href="mailto:contacto@clasesparticularesonline.cl"
-            class="primary-button"
-        >
-            Solicitar una clase
-        </a>
+            <h2>
+                Preguntas sobre las clases
+            </h2>
+
+        </div>
+
+
+        <div class="faq">
+
+
+            <details>
+
+                <summary>
+                    ¿Las clases son completamente online?
+                </summary>
+
+                <p>
+                    Sí. Las clases se realizan completamente online,
+                    por lo que puedes estudiar desde cualquier lugar
+                    de Chile.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    ¿Qué asignaturas están disponibles?
+                </summary>
+
+                <p>
+                    Actualmente puedes encontrar clases de Física,
+                    Matemáticas, Cálculo y preparación PAES.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    ¿Puedo tomar clases si estoy en la universidad?
+                </summary>
+
+                <p>
+                    Sí. También se ofrecen clases orientadas a
+                    contenidos universitarios, dependiendo de la
+                    asignatura y del nivel requerido.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    ¿Las clases se adaptan a mi nivel?
+                </summary>
+
+                <p>
+                    Sí. La clase puede adaptarse al nivel del estudiante,
+                    los contenidos que necesita reforzar y sus objetivos.
+                </p>
+
+            </details>
+
+
+        </div>
 
     </div>
 
 </section>
 
+
+<!-- =====================================================
+     CTA
+====================================================== -->
+
+<section id="contacto" class="cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <h2>
+                ¿Quieres comenzar?
+            </h2>
+
+            <p>
+                Cuéntanos qué asignatura necesitas estudiar,
+                qué nivel tienes y qué objetivo quieres alcanzar.
+            </p>
+
+            <!-- =================================================
+                 CAMBIAR POR TU EMAIL REAL
+            ================================================== -->
+
+            <a
+                href="mailto:TUEMAIL@EJEMPLO.COM"
+                class="button button-primary"
+            >
+                Solicitar una clase
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 </main>
 
 
-
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+====================================================== -->
 
 <footer>
 
     <div class="container">
 
-        <div class="footer-content">
+        <div class="footer-grid">
 
-            <div class="footer-logo">
-                Clases Particulares Online
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    Clases Particulares Online
+                </div>
+
+                <p>
+                    Clases particulares online de Física,
+                    Matemáticas y otras asignaturas para
+                    estudiantes en Chile.
+                </p>
+
             </div>
 
-            <div class="footer-small">
-                © 2026 Clases Particulares Online · Chile
+
+            <div class="footer-column">
+
+                <h3>
+                    Asignaturas
+                </h3>
+
+                <a href="clases-particulares-fisica.html">
+                    Física
+                </a>
+
+                <a href="clases-particulares-matematicas.html">
+                    Matemáticas
+                </a>
+
+                <a href="clases-calculo.html">
+                    Cálculo
+                </a>
+
+                <a href="preparacion-paes.html">
+                    PAES
+                </a>
+
             </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Información
+                </h3>
+
+                <a href="#como-funciona">
+                    Cómo funciona
+                </a>
+
+                <a href="#preguntas">
+                    Preguntas frecuentes
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Clases Particulares Online · Chile
 
         </div>
 
