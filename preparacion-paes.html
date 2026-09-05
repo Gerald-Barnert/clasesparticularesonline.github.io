@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Preparación PAES Online | Clases PAES en Chile</title>
+
+  <meta
+    name="description"
+    content="Preparación PAES online en Chile. Clases particulares de Matemática y Física, resolución de ejercicios, repaso de contenidos y preparación personalizada."
+  >
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Clases Particulares Online">
+
+  <link
+    rel="canonical"
+    href="https://gerald-barnert.github.io/clasesparticularesonline.github.io/preparacion-paes.html"
+  >
+
+  <!-- Google Search Console -->
+  <meta
+    name="google-site-verification"
+    content="trkXQVca_o2BmpHGnjuod1X497x3cn2D8gHeMMtOu5c"
+  >
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Preparación PAES Online | Clases PAES en Chile">
+  <meta
+    property="og:description"
+    content="Clases particulares online para preparar la PAES de Matemática y Física en Chile."
+  >
+  <meta
+    property="og:url"
+    content="https://gerald-barnert.github.io/clasesparticularesonline.github.io/preparacion-paes.html"
+  >
+  <meta property="og:type" content="website">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Preparación PAES online",
+    "description": "Clases particulares online para preparación de la PAES en Chile.",
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "Clases Particulares Online",
+      "url": "https://gerald-barnert.github.io/clasesparticularesonline.github.io/"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Chile"
+    },
+    "serviceType": "Preparación PAES"
+  }
+  </script>
+
+  <style>
+
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text: #172033;
+      --muted: #64748b;
+      --background: #f8fafc;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --soft: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav a {
+      color: #475569;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav-button {
+      background: var(--primary);
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 9px;
+      font-weight: 600 !important;
+    }
+
+    .nav-button:hover {
+      background: var(--primary-dark);
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(circle at top right, #dbeafe, transparent 40%),
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      padding: 90px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--primary-dark);
+      border: 1px solid #bfdbfe;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: #94a3b8;
+    }
+
+    /* HERO CARD */
+
+    .hero-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero-card h2 {
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+    }
+
+    .check {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin: 15px 0;
+      color: #475569;
+    }
+
+    .check-icon {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .section-header h2 {
+      font-size: 2.3rem;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.025em;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* SUBJECTS */
+
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .subject {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 32px;
+      transition: 0.2s;
+    }
+
+    .subject:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(15,23,42,0.07);
+    }
+
+    .subject-number {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    .subject h3 {
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+    }
+
+    .subject p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .subject a {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    /* PREPARATION */
+
+    .preparation {
+      background: white;
+    }
+
+    .prep-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .prep-card {
+      background: var(--background);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .prep-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .prep-card p {
+      color: var(--muted);
+    }
+
+    /* SEO CONTENT */
+
+    .content {
+      max-width: 850px;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .content h3 {
+      font-size: 1.35rem;
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      color: #475569;
+      margin-bottom: 17px;
+    }
+
+    .content ul {
+      margin: 10px 0 25px 22px;
+      color: #475569;
+    }
+
+    .content li {
+      margin-bottom: 8px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: #172033;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #cbd5e1;
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+
+    .cta .button-primary {
+      background: white;
+      color: var(--text);
+    }
+
+    .cta .button-primary:hover {
+      background: #f1f5f9;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 30px 0;
+      font-size: 0.9rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .subjects,
+      .prep-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav a:not(.nav-button) {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+
+      .subjects,
+      .prep-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.55rem;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a href="index.html" class="logo">
+        Clases<span>Online</span>
+      </a>
+
+      <nav>
+
+        <a href="index.html#asignaturas">
+          Asignaturas
+        </a>
+
+        <a href="index.html#como-funciona">
+          Cómo funciona
+        </a>
+
+        <a href="index.html#preguntas">
+          Preguntas
+        </a>
+
+        <a
+          href="mailto:TUEMAIL@EJEMPLO.COM"
+          class="nav-button"
+        >
+          Solicitar una clase
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <span class="badge">
+            PAES · Chile
+          </span>
+
+          <h1>
+            Preparación PAES online
+          </h1>
+
+          <p>
+            Clases particulares online para preparar la PAES desde
+            cualquier lugar de Chile. Revisa contenidos, practica
+            ejercicios y trabaja tus principales dificultades con una
+            preparación personalizada.
+          </p>
+
+          <div class="buttons">
+
+            <a
+              href="mailto:TUEMAIL@EJEMPLO.COM"
+              class="button button-primary"
+            >
+              Solicitar una clase
+            </a>
+
+            <a
+              href="index.html"
+              class="button button-secondary"
+            >
+              Volver al inicio
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <h2>
+            ¿Cómo podemos trabajar?
+          </h2>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Revisión de contenidos</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Resolución de ejercicios</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Identificación de dificultades</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Práctica de problemas</span>
+          </div>
+
+          <div class="check">
+            <span class="check-icon">✓</span>
+            <span>Preparación personalizada</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SUBJECTS -->
+
+    <section id="asignaturas">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            Preparación por asignatura
+          </h2>
+
+          <p>
+            Puedes concentrar las clases en las áreas que necesitas
+            reforzar para tu preparación.
+          </p>
+
+        </div>
+
+
+        <div class="subjects">
+
+          <article class="subject">
+
+            <div class="subject-number">
+              01
+            </div>
+
+            <h3>
+              PAES Matemática
+            </h3>
+
+            <p>
+              Revisión de contenidos matemáticos, resolución de
+              ejercicios y práctica de problemas para preparar la
+              prueba.
+            </p>
+
+            <a href="clases-particulares-matematicas.html">
+              Ver clases de Matemáticas →
+            </a>
+
+          </article>
+
+
+          <article class="subject">
+
+            <div class="subject-number">
+              02
+            </div>
+
+            <h3>
+              PAES Ciencias · Física
+            </h3>
+
+            <p>
+              Repaso de contenidos de Física y resolución de problemas
+              para estudiantes que preparan la prueba de Ciencias.
+            </p>
+
+            <a href="clases-particulares-fisica.html">
+              Ver clases de Física →
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PREPARATION -->
+
+    <section class="preparation">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            Una preparación enfocada en tus necesidades
+          </h2>
+
+          <p>
+            La preparación puede organizarse según tu nivel actual,
+            tiempo disponible y contenidos que necesites reforzar.
+          </p>
+
+        </div>
+
+
+        <div class="prep-grid">
+
+          <article class="prep-card">
+
+            <h3>
+              1. Diagnóstico
+            </h3>
+
+            <p>
+              Identifica los contenidos que dominas y aquellos en los
+              que necesitas dedicar más tiempo.
+            </p>
+
+          </article>
+
+
+          <article class="prep-card">
+
+            <h3>
+              2. Repaso
+            </h3>
+
+            <p>
+              Revisa los conceptos fundamentales y resuelve ejercicios
+              para consolidar los conocimientos.
+            </p>
+
+          </article>
+
+
+          <article class="prep-card">
+
+            <h3>
+              3. Práctica
+            </h3>
+
+            <p>
+              Trabaja problemas y ejercicios para desarrollar una mayor
+              seguridad al enfrentarte a la prueba.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SEO CONTENT -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="content">
+
+          <h2>
+            Preparación PAES online en Chile
+          </h2>
+
+          <p>
+            Prepararse para la PAES requiere conocer los contenidos de
+            la prueba y desarrollar la capacidad de resolver problemas
+            de manera eficiente. Las clases particulares online permiten
+            concentrar el estudio en las áreas que cada estudiante
+            necesita reforzar.
+          </p>
+
+          <p>
+            Una preparación personalizada puede combinar revisión
+            conceptual, resolución de ejercicios y práctica de problemas.
+            De esta manera, el estudio no tiene que limitarse a repetir
+            contenidos, sino que puede enfocarse en comprenderlos y
+            aplicarlos.
+          </p>
+
+
+          <h3>
+            Clases PAES de Matemática
+          </h3>
+
+          <p>
+            Las clases de Matemática pueden enfocarse en los contenidos
+            que necesitas reforzar, junto con ejercicios y problemas
+            que permitan practicar diferentes estrategias de resolución.
+          </p>
+
+
+          <h3>
+            Preparación PAES de Ciencias y Física
+          </h3>
+
+          <p>
+            Para quienes preparan la prueba de Ciencias con orientación
+            en Física, las clases pueden centrarse en comprender los
+            conceptos físicos y aplicarlos a la resolución de problemas.
+          </p>
+
+
+          <h3>
+            ¿Por qué preparar la PAES online?
+          </h3>
+
+          <p>
+            Las clases online permiten estudiar desde cualquier lugar de
+            Chile y trabajar directamente con material digital,
+            ejercicios y apuntes. También permiten organizar las sesiones
+            según las necesidades del estudiante.
+          </p>
+
+
+          <h3>
+            ¿Cuándo comenzar a preparar la PAES?
+          </h3>
+
+          <p>
+            No existe un único momento adecuado para comenzar. Lo
+            importante es conocer tu nivel actual y establecer qué
+            contenidos necesitas trabajar. Una preparación progresiva
+            permite distribuir el estudio y dedicar más tiempo a las
+            áreas que presentan mayores dificultades.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <h2>
+          ¿Quieres preparar la PAES?
+        </h2>
+
+        <p>
+          Solicita información sobre las clases particulares online y
+          cuéntame qué prueba o contenidos necesitas preparar.
+        </p>
+
+        <a
+          href="mailto:TUEMAIL@EJEMPLO.COM"
+          class="button button-primary"
+        >
+          Solicitar una clase
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+        © 2026 Clases Particulares Online
+      </div>
+
+      <div class="footer-links">
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="clases-particulares-fisica.html">
+          Física
+        </a>
+
+        <a href="clases-particulares-matematicas.html">
+          Matemáticas
+        </a>
+
+        <a href="clases-calculo.html">
+          Cálculo
+        </a>
+
+        <a href="preparacion-paes.html">
+          PAES
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
