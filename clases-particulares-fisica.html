@@ -1,114 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- =====================================================
-         GOOGLE SEARCH CONSOLE
-    ====================================================== -->
-
-    <meta name="google-site-verification"
-          content="trkXQVca_o2BmpHGnjuod1X497x3cn2D8gHeMMtOu5c">
-
-
-    <!-- =====================================================
-         SEO
-    ====================================================== -->
-
-    <title>
-        Clases Particulares de Física Online en Chile | Profesor de Física
-    </title>
+    <title>Clases Particulares de Física Online en Chile | Profesor de Física</title>
 
     <meta name="description"
           content="Clases particulares de Física online en Chile para estudiantes escolares y universitarios. Mecánica, dinámica, electricidad, ondas, termodinámica y preparación PAES.">
 
-    <meta name="robots"
-          content="index, follow">
-
-    <meta name="author"
-          content="Clases Particulares Online">
+    <meta name="robots" content="index, follow">
 
     <link rel="canonical"
           href="https://gerald-barnert.github.io/clasesparticularesonline.github.io/clases-particulares-fisica.html">
 
+    <meta name="google-site-verification"
+          content="trkXQVca_o2BmpHGnjuod1X497x3cn2D8gHeMMtOu5c">
 
-    <!-- =====================================================
-         OPEN GRAPH
-    ====================================================== -->
-
-    <meta property="og:type"
-          content="website">
-
+    <!-- Open Graph -->
     <meta property="og:title"
           content="Clases Particulares de Física Online en Chile">
 
     <meta property="og:description"
-          content="Clases personalizadas de Física online para estudiantes en Chile, desde enseñanza escolar hasta universidad.">
+          content="Clases particulares de Física online para estudiantes escolares y universitarios en Chile.">
+
+    <meta property="og:type" content="website">
 
     <meta property="og:url"
           content="https://gerald-barnert.github.io/clasesparticularesonline.github.io/clases-particulares-fisica.html">
 
-    <meta property="og:locale"
-          content="es_CL">
-
-
-    <!-- =====================================================
-         STRUCTURED DATA
-    ====================================================== -->
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Clases particulares de Física online",
-        "description": "Clases particulares de Física online para estudiantes en Chile.",
-        "provider": {
-            "@type": "EducationalOrganization",
-            "name": "Clases Particulares Online",
-            "url": "https://gerald-barnert.github.io/clasesparticularesonline.github.io/"
-        },
-        "areaServed": {
-            "@type": "Country",
-            "name": "Chile"
-        },
-        "serviceType": "Clases particulares de Física",
-        "url": "https://gerald-barnert.github.io/clasesparticularesonline.github.io/clases-particulares-fisica.html"
-    }
-    </script>
-
-
-    <!-- =====================================================
-         STYLES
-    ====================================================== -->
-
     <style>
 
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --primary-light: #eff6ff;
-
-            --dark: #0f172a;
-            --text: #334155;
-            --muted: #64748b;
-
-            --border: #e2e8f0;
-            --background: #f8fafc;
-            --white: #ffffff;
-
-            --radius: 16px;
-        }
-
-
-        /* RESET */
-
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         html {
@@ -116,1075 +43,454 @@
         }
 
         body {
-            font-family:
-                Inter,
-                ui-sans-serif,
-                system-ui,
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-
-            color: var(--text);
-            background: white;
-
-            line-height: 1.65;
-
-            -webkit-font-smoothing: antialiased;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #172033;
+            background: #f7f9fc;
         }
 
         a {
-            color: inherit;
             text-decoration: none;
+            color: inherit;
         }
 
-        .container {
-            width: min(1160px, 92%);
-            margin: auto;
-        }
-
-
-        /* =====================================================
-           HEADER
-        ====================================================== */
+        /* HEADER */
 
         header {
+            background: white;
+            border-bottom: 1px solid #e6e9ef;
             position: sticky;
             top: 0;
             z-index: 1000;
-
-            background: rgba(255,255,255,.95);
-
-            backdrop-filter: blur(12px);
-
-            border-bottom: 1px solid var(--border);
         }
 
-        nav {
-            min-height: 74px;
+        .nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 18px 24px;
 
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
+            gap: 20px;
         }
 
         .logo {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             font-weight: 800;
-
-            color: var(--dark);
+            color: #173b73;
         }
 
         .logo span {
-            color: var(--primary);
+            color: #2563eb;
         }
 
-        .nav-links {
+        nav {
             display: flex;
             align-items: center;
-
-            gap: 27px;
-
-            font-size: .94rem;
-            font-weight: 650;
-
-            color: var(--muted);
+            gap: 25px;
         }
 
-        .nav-links a:hover {
-            color: var(--primary);
+        nav a {
+            color: #4b5563;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #2563eb;
         }
 
         .nav-cta {
-            background: var(--primary);
-
+            background: #2563eb;
             color: white !important;
-
-            padding: 10px 17px;
-
-            border-radius: 9px;
+            padding: 11px 18px;
+            border-radius: 8px;
         }
 
         .nav-cta:hover {
-            background: var(--primary-dark);
+            background: #1d4ed8;
         }
 
-
-        /* =====================================================
-           HERO
-        ====================================================== */
+        /* HERO */
 
         .hero {
-            padding: 100px 0 95px;
-
-            background:
-                radial-gradient(
-                    circle at 80% 20%,
-                    #dbeafe 0,
-                    transparent 30%
-                ),
-                linear-gradient(
-                    135deg,
-                    #f8fbff,
-                    #eef5ff
-                );
+            background: linear-gradient(135deg, #edf4ff, #ffffff);
+            padding: 90px 24px;
         }
 
-        .hero-content {
-            max-width: 850px;
-        }
+        .hero-container {
+            max-width: 1150px;
+            margin: auto;
 
-        .eyebrow {
-            display: inline-block;
-
-            padding: 7px 13px;
-
-            margin-bottom: 22px;
-
-            border-radius: 999px;
-
-            background: #dbeafe;
-
-            color: #1d4ed8;
-
-            font-size: .83rem;
-            font-weight: 800;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            align-items: center;
+            gap: 60px;
         }
 
         .hero h1 {
-            color: var(--dark);
-
-            font-size: clamp(2.5rem, 6vw, 4.6rem);
-
-            line-height: 1.04;
-
-            letter-spacing: -3px;
-
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            line-height: 1.1;
             margin-bottom: 25px;
+            color: #12264a;
         }
 
         .hero h1 span {
-            color: var(--primary);
+            color: #2563eb;
         }
 
-        .hero-description {
-            max-width: 720px;
-
-            color: var(--muted);
-
-            font-size: 1.18rem;
-
-            margin-bottom: 32px;
+        .hero p {
+            font-size: 1.2rem;
+            color: #536174;
+            max-width: 680px;
+            margin-bottom: 30px;
         }
 
         .buttons {
             display: flex;
-
+            gap: 15px;
             flex-wrap: wrap;
-
-            gap: 14px;
         }
 
         .button {
-            display: inline-flex;
-
-            align-items: center;
-            justify-content: center;
-
-            min-height: 50px;
-
-            padding: 0 23px;
-
-            border-radius: 10px;
-
-            font-weight: 750;
+            display: inline-block;
+            padding: 14px 23px;
+            border-radius: 9px;
+            font-weight: 700;
+            transition: 0.2s;
         }
 
         .primary {
-            background: var(--primary);
-
+            background: #2563eb;
             color: white;
-
-            box-shadow:
-                0 8px 20px rgba(37,99,235,.18);
         }
 
         .primary:hover {
-            background: var(--primary-dark);
+            background: #1d4ed8;
+            transform: translateY(-1px);
         }
 
         .secondary {
             background: white;
-
-            border: 1px solid var(--border);
-
-            color: var(--dark);
+            border: 1px solid #d5dbe5;
+            color: #26364f;
         }
 
         .secondary:hover {
-            border-color: #bfdbfe;
-
-            color: var(--primary);
+            border-color: #2563eb;
+            color: #2563eb;
         }
 
+        .hero-card {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 15px 45px rgba(23, 43, 77, 0.10);
+        }
 
-        /* =====================================================
-           SECTION
-        ====================================================== */
+        .hero-card h2 {
+            margin-bottom: 15px;
+            color: #173b73;
+        }
+
+        .hero-card ul {
+            list-style: none;
+        }
+
+        .hero-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #edf0f5;
+        }
+
+        .hero-card li:last-child {
+            border-bottom: none;
+        }
+
+        .hero-card li::before {
+            content: "✓";
+            color: #2563eb;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* GENERAL */
 
         section {
-            padding: 90px 0;
+            padding: 75px 24px;
         }
 
-        .section-heading {
-            max-width: 750px;
-
-            margin: 0 auto 50px;
-
-            text-align: center;
-        }
-
-        .section-label {
-            display: block;
-
-            margin-bottom: 9px;
-
-            color: var(--primary);
-
-            font-size: .8rem;
-
-            font-weight: 850;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1.4px;
-        }
-
-        .section-heading h2 {
-            color: var(--dark);
-
-            font-size: clamp(2rem, 4vw, 3rem);
-
-            line-height: 1.1;
-
-            letter-spacing: -1.5px;
-
-            margin-bottom: 15px;
-        }
-
-        .section-heading p {
-            color: var(--muted);
-
-            font-size: 1.03rem;
-        }
-
-
-        /* =====================================================
-           CONTENT
-        ====================================================== */
-
-        .content-section {
-            background: white;
-        }
-
-        .content {
-            max-width: 850px;
-
+        .container {
+            max-width: 1050px;
             margin: auto;
         }
 
-        .content h2 {
-            color: var(--dark);
-
-            font-size: 2rem;
-
-            margin-bottom: 20px;
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
         }
 
-        .content h3 {
-            color: var(--dark);
-
-            font-size: 1.35rem;
-
-            margin-top: 38px;
-
-            margin-bottom: 10px;
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: #172b4d;
+            margin-bottom: 12px;
         }
 
-        .content p {
-            color: #475569;
-
-            margin-bottom: 16px;
+        .section-title p {
+            color: #657184;
+            max-width: 700px;
+            margin: auto;
         }
 
-        .content strong {
-            color: #1e293b;
-        }
-
-
-        /* =====================================================
-           TOPICS
-        ====================================================== */
-
-        .topics-section {
-            background: var(--background);
-        }
+        /* TOPICS */
 
         .topics {
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 20px;
-        }
-
-        .topic {
-            padding: 25px;
-
             background: white;
-
-            border: 1px solid var(--border);
-
-            border-radius: var(--radius);
-
-            transition:
-                transform .2s ease,
-                box-shadow .2s ease;
         }
 
-        .topic:hover {
-            transform: translateY(-4px);
-
-            box-shadow:
-                0 10px 30px rgba(15,23,42,.07);
-        }
-
-        .topic-icon {
-            font-size: 1.6rem;
-
-            margin-bottom: 15px;
-        }
-
-        .topic h3 {
-            color: var(--dark);
-
-            margin-bottom: 8px;
-        }
-
-        .topic p {
-            color: var(--muted);
-
-            font-size: .93rem;
-        }
-
-
-        /* =====================================================
-           LEVELS
-        ====================================================== */
-
-        .levels {
+        .topic-grid {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 22px;
         }
 
+        .topic {
+            background: #f8faff;
+            border: 1px solid #e7ecf4;
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        .topic h3 {
+            margin-bottom: 10px;
+            color: #173b73;
+        }
+
+        .topic p {
+            color: #657184;
+        }
+
+        /* LEVELS */
+
+        .levels {
+            background: #f7f9fc;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
         .level {
+            background: white;
             padding: 30px;
-
-            border: 1px solid var(--border);
-
-            border-radius: var(--radius);
+            border-radius: 15px;
+            border: 1px solid #e5e9f0;
         }
 
         .level h3 {
-            color: var(--dark);
-
-            margin-bottom: 10px;
+            color: #173b73;
+            margin-bottom: 12px;
         }
 
         .level p {
-            color: var(--muted);
-
-            font-size: .94rem;
+            color: #657184;
         }
 
+        /* WHY */
 
-        /* =====================================================
-           CTA
-        ====================================================== */
-
-        .cta {
-            background:
-                linear-gradient(
-                    135deg,
-                    #172554,
-                    #1e3a8a
-                );
-
-            color: white;
-
-            text-align: center;
-        }
-
-        .cta-content {
-            max-width: 720px;
-
-            margin: auto;
-        }
-
-        .cta h2 {
-            font-size: clamp(2rem, 4vw, 3.1rem);
-
-            line-height: 1.1;
-
-            letter-spacing: -1.5px;
-
-            margin-bottom: 17px;
-        }
-
-        .cta p {
-            color: #dbeafe;
-
-            margin-bottom: 30px;
-        }
-
-        .cta .primary {
-            display: inline-flex;
-
+        .why {
             background: white;
-
-            color: #1d4ed8;
         }
 
-
-        /* =====================================================
-           FOOTER
-        ====================================================== */
-
-        footer {
-            background: #0b1120;
-
-            color: #94a3b8;
-
-            padding: 40px 0;
-        }
-
-        .footer-grid {
+        .why-grid {
             display: grid;
-
-            grid-template-columns:
-                2fr 1fr 1fr;
-
-            gap: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
         }
 
-        .footer-logo {
-            color: white;
+        .why-card {
+            padding: 30px;
+            border: 1px solid #e5e9f0;
+            border-radius: 15px;
+        }
 
-            font-size: 1.1rem;
-
-            font-weight: 800;
-
+        .why-card h3 {
+            color: #173b73;
             margin-bottom: 10px;
         }
 
-        .footer-brand p {
-            max-width: 380px;
-
-            font-size: .88rem;
+        .why-card p {
+            color: #657184;
         }
 
-        .footer-column h3 {
+        /* SEO CONTENT */
+
+        .content {
+            background: #f7f9fc;
+        }
+
+        .content-box {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .content-box h2 {
+            color: #172b4d;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content-box h3 {
+            color: #173b73;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .content-box p {
+            color: #526074;
+            margin-bottom: 18px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #173b73;
             color: white;
-
-            font-size: .9rem;
-
-            margin-bottom: 14px;
+            text-align: center;
         }
 
-        .footer-column a {
-            display: block;
-
-            margin-bottom: 7px;
-
-            font-size: .87rem;
+        .cta h2 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
         }
 
-        .footer-column a:hover {
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #dce7f7;
+        }
+
+        .cta .primary {
+            background: white;
+            color: #173b73;
+        }
+
+        .cta .primary:hover {
+            background: #eef4ff;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0f1f38;
+            color: #c9d3e3;
+            padding: 35px 24px;
+        }
+
+        .footer-container {
+            max-width: 1050px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer a {
             color: white;
         }
 
-        .copyright {
-            margin-top: 35px;
-
-            padding-top: 22px;
-
-            border-top: 1px solid #1e293b;
-
-            font-size: .8rem;
+        footer a:hover {
+            text-decoration: underline;
         }
 
+        /* MOBILE */
 
-        /* =====================================================
-           MOBILE
-        ====================================================== */
+        @media (max-width: 800px) {
 
-        @media (max-width: 850px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
 
-            .nav-links {
+            .topic-grid,
+            .level-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a:not(.nav-cta) {
                 display: none;
             }
 
-            .topics,
-            .levels {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-
-        @media (max-width: 600px) {
-
             .hero {
-                padding: 75px 0;
-            }
-
-            .hero h1 {
-                letter-spacing: -2px;
+                padding: 65px 20px;
             }
 
             section {
-                padding: 70px 0;
+                padding: 60px 20px;
             }
 
-            .topics,
-            .levels {
-                grid-template-columns: 1fr;
-            }
-
-            .buttons {
+            .footer-container {
                 flex-direction: column;
-            }
-
-            .button {
-                width: 100%;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
+                text-align: center;
             }
         }
 
     </style>
 
-</head>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Clases Particulares de Física Online",
+        "description": "Clases particulares de Física online en Chile para estudiantes escolares y universitarios.",
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": "ClasesOnline",
+            "url": "https://gerald-barnert.github.io/clasesparticularesonline.github.io/"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        },
+        "serviceType": "Clases particulares de Física"
+    }
+    </script>
 
+</head>
 
 <body>
 
+    <!-- HEADER -->
 
-<!-- =====================================================
-     HEADER
-====================================================== -->
+    <header>
 
-<header>
-
-    <div class="container">
-
-        <nav>
+        <div class="nav">
 
             <a href="index.html" class="logo">
                 Clases<span>Online</span>
             </a>
 
-            <div class="nav-links">
+            <nav>
 
                 <a href="index.html">
                     Inicio
                 </a>
 
-                <a href="clases-particulares-matematicas.html">
-                    Matemáticas
-                </a>
-
-                <a href="preparacion-paes.html">
-                    PAES
-                </a>
-
-                <a href="#contacto" class="nav-cta">
-                    Solicitar una clase
-                </a>
-
-            </div>
-
-        </nav>
-
-    </div>
-
-</header>
-
-
-<!-- =====================================================
-     HERO
-====================================================== -->
-
-<main>
-
-<section class="hero">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <div class="eyebrow">
-                🇨🇱 Física online para estudiantes en Chile
-            </div>
-
-            <h1>
-                Clases particulares de
-                <span>Física</span>
-                online
-            </h1>
-
-            <p class="hero-description">
-                Clases personalizadas de Física para estudiantes
-                escolares y universitarios. Comprende los conceptos,
-                aprende a resolver problemas y prepárate para tus
-                evaluaciones con un plan adaptado a tus necesidades.
-            </p>
-
-            <div class="buttons">
-
-                <a
-                    href="#contacto"
-                    class="button primary"
-                >
-                    Solicitar una clase
-                </a>
-
-                <a
-                    href="#contenidos"
-                    class="button secondary"
-                >
-                    Ver contenidos
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     INTRODUCTION
-====================================================== -->
-
-<section class="content-section">
-
-    <div class="container">
-
-        <div class="content">
-
-            <span class="section-label">
-                Clases de Física
-            </span>
-
-            <h2>
-                Aprende Física de forma personalizada
-            </h2>
-
-            <p>
-                Las <strong>clases particulares de Física online</strong>
-                están pensadas para estudiantes que necesitan reforzar
-                contenidos, preparar una prueba, resolver problemas
-                específicos o comprender mejor una materia.
-            </p>
-
-            <p>
-                En una clase individual podemos concentrarnos
-                directamente en las dificultades del estudiante,
-                revisar los conceptos necesarios y trabajar ejercicios
-                paso a paso.
-            </p>
-
-            <p>
-                La modalidad online permite tomar
-                <strong>clases de Física desde cualquier lugar de Chile</strong>,
-                sin necesidad de desplazarse.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CONTENTS
-====================================================== -->
-
-<section id="contenidos" class="topics-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                Contenidos
-            </span>
-
-            <h2>
-                ¿Qué temas de Física puedes estudiar?
-            </h2>
-
-            <p>
-                Las clases pueden enfocarse en un tema específico
-                o cubrir una unidad completa.
-            </p>
-
-        </div>
-
-
-        <div class="topics">
-
-
-            <article class="topic">
-
-                <div class="topic-icon">
-                    🚗
-                </div>
-
-                <h3>
-                    Mecánica
-                </h3>
-
-                <p>
-                    Movimiento, cinemática, velocidad, aceleración,
-                    fuerzas y leyes de Newton.
-                </p>
-
-            </article>
-
-
-            <article class="topic">
-
-                <div class="topic-icon">
-                    ⚡
-                </div>
-
-                <h3>
-                    Electricidad
-                </h3>
-
-                <p>
-                    Carga eléctrica, campo eléctrico, potencial,
-                    circuitos y corriente.
-                </p>
-
-            </article>
-
-
-            <article class="topic">
-
-                <div class="topic-icon">
-                    🌊
-                </div>
-
-                <h3>
-                    Ondas
-                </h3>
-
-                <p>
-                    Movimiento ondulatorio, frecuencia,
-                    longitud de onda, sonido y fenómenos ondulatorios.
-                </p>
-
-            </article>
-
-
-            <article class="topic">
-
-                <div class="topic-icon">
-                    🔥
-                </div>
-
-                <h3>
-                    Termodinámica
-                </h3>
-
-                <p>
-                    Temperatura, calor, trabajo, energía interna
-                    y leyes de la termodinámica.
-                </p>
-
-            </article>
-
-
-            <article class="topic">
-
-                <div class="topic-icon">
-                    🔋
-                </div>
-
-                <h3>
-                    Energía
-                </h3>
-
-                <p>
-                    Trabajo, energía cinética, energía potencial
-                    y conservación de la energía.
-                </p>
-
-            </article>
-
-
-            <article class="topic">
-
-                <div class="topic-icon">
-                    🧲
-                </div>
-
-                <h3>
-                    Electromagnetismo
-                </h3>
-
-                <p>
-                    Campos magnéticos, fuerzas magnéticas,
-                    inducción y electromagnetismo.
-                </p>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     LEVELS
-====================================================== -->
-
-<section>
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                Nivel académico
-            </span>
-
-            <h2>
-                Clases adaptadas a tu nivel
-            </h2>
-
-            <p>
-                Desde contenidos escolares hasta asignaturas
-                universitarias.
-            </p>
-
-        </div>
-
-
-        <div class="levels">
-
-
-            <article class="level">
-
-                <h3>
-                    Enseñanza escolar
-                </h3>
-
-                <p>
-                    Reforzamiento de contenidos, preparación de
-                    pruebas y resolución de ejercicios de Física.
-                </p>
-
-            </article>
-
-
-            <article class="level">
-
-                <h3>
-                    Preparación PAES
-                </h3>
-
-                <p>
-                    Revisión de contenidos, práctica de ejercicios
-                    y preparación enfocada en la prueba.
-                </p>
-
-            </article>
-
-
-            <article class="level">
-
-                <h3>
-                    Universidad
-                </h3>
-
-                <p>
-                    Física universitaria, mecánica, electricidad,
-                    electromagnetismo y otros contenidos.
-                </p>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     SEO CONTENT
-====================================================== -->
-
-<section class="topics-section">
-
-    <div class="container">
-
-        <div class="content">
-
-            <span class="section-label">
-                Física online en Chile
-            </span>
-
-            <h2>
-                Profesor de Física online
-            </h2>
-
-            <p>
-                Si estás buscando un <strong>profesor de Física online
-                en Chile</strong>, las clases particulares permiten
-                trabajar directamente los contenidos que necesitas
-                reforzar.
-            </p>
-
-            <p>
-                Puedes utilizar las clases para preparar una evaluación,
-                resolver ejercicios que no hayas podido completar,
-                repasar una unidad completa o profundizar en conceptos
-                que quieras comprender mejor.
-            </p>
-
-            <h3>
-                Clases particulares de Física para la PAES
-            </h3>
-
-            <p>
-                La preparación para la PAES puede combinar revisión
-                conceptual y resolución de problemas. El objetivo es
-                desarrollar una comprensión sólida de los contenidos
-                y aprender estrategias para enfrentarse a distintos
-                tipos de preguntas.
-            </p>
-
-            <h3>
-                Clases de Física universitaria
-            </h3>
-
-            <p>
-                También es posible trabajar contenidos de Física
-                universitaria, incluyendo mecánica, electricidad,
-                ondas, termodinámica y electromagnetismo, dependiendo
-                del programa y nivel del estudiante.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CTA
-====================================================== -->
-
-<section id="contacto" class="cta">
-
-    <div class="container">
-
-        <div class="cta-content">
-
-            <h2>
-                ¿Necesitas ayuda con Física?
-            </h2>
-
-            <p>
-                Cuéntanos qué estás estudiando, tu nivel y qué
-                contenidos necesitas reforzar.
-            </p>
-
-            <!-- CAMBIAR POR TU EMAIL REAL -->
-
-            <a href="contacto.html">
-    Solicitar una clase
-</a>
-
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
-<footer>
-
-    <div class="container">
-
-        <div class="footer-grid">
-
-
-            <div class="footer-brand">
-
-                <div class="footer-logo">
-                    Clases Particulares Online
-                </div>
-
-                <p>
-                    Clases particulares online de Física,
-                    Matemáticas y otras asignaturas para
-                    estudiantes en Chile.
-                </p>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Asignaturas
-                </h3>
-
-                <a href="index.html">
-                    Inicio
+                <a href="clases-particulares-fisica.html">
+                    Física
                 </a>
 
                 <a href="clases-particulares-matematicas.html">
@@ -1199,43 +505,509 @@
                     PAES
                 </a>
 
+                <a href="contacto.html" class="nav-cta">
+                    Solicitar una clase
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <div>
+
+                    <h1>
+                        Clases particulares de
+                        <span>Física online</span>
+                        en Chile
+                    </h1>
+
+                    <p>
+                        Aprende Física de forma clara, personalizada y
+                        a tu propio ritmo. Clases online para estudiantes
+                        escolares, preparación PAES y estudiantes universitarios.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="contacto.html" class="button primary">
+                            Solicitar una clase
+                        </a>
+
+                        <a href="#temas" class="button secondary">
+                            Ver materias
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <h2>
+                        ¿Qué puedes aprender?
+                    </h2>
+
+                    <ul>
+
+                        <li>Mecánica y dinámica</li>
+
+                        <li>Electricidad y electromagnetismo</li>
+
+                        <li>Ondas y oscilaciones</li>
+
+                        <li>Termodinámica</li>
+
+                        <li>Energía y conservación</li>
+
+                        <li>Preparación PAES</li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
+        </section>
 
-            <div class="footer-column">
+
+        <!-- TEMAS -->
+
+        <section class="topics" id="temas">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        Clases de Física según tus necesidades
+                    </h2>
+
+                    <p>
+                        Trabajamos los contenidos que necesitas,
+                        desde los conceptos fundamentales hasta
+                        problemas de mayor dificultad.
+                    </p>
+
+                </div>
+
+
+                <div class="topic-grid">
+
+                    <div class="topic">
+
+                        <h3>
+                            Mecánica
+                        </h3>
+
+                        <p>
+                            Movimiento, velocidad, aceleración,
+                            leyes de Newton, fuerzas, trabajo,
+                            energía y cantidad de movimiento.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            Electricidad
+                        </h3>
+
+                        <p>
+                            Carga eléctrica, campo eléctrico,
+                            potencial, circuitos, corriente,
+                            resistencia y leyes de Kirchhoff.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            Ondas
+                        </h3>
+
+                        <p>
+                            Movimiento ondulatorio, frecuencia,
+                            longitud de onda, sonido,
+                            interferencia y fenómenos ondulatorios.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            Termodinámica
+                        </h3>
+
+                        <p>
+                            Temperatura, calor, energía interna,
+                            leyes de la termodinámica y procesos
+                            termodinámicos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            Energía
+                        </h3>
+
+                        <p>
+                            Conservación de la energía,
+                            energía cinética, potencial,
+                            trabajo y potencia.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            Electromagnetismo
+                        </h3>
+
+                        <p>
+                            Campos magnéticos, fuerza magnética,
+                            inducción electromagnética y
+                            aplicaciones.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NIVELES -->
+
+        <section class="levels">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        Clases para distintos niveles
+                    </h2>
+
+                    <p>
+                        Las clases se adaptan al nivel académico
+                        y a los objetivos de cada estudiante.
+                    </p>
+
+                </div>
+
+
+                <div class="level-grid">
+
+                    <div class="level">
+
+                        <h3>
+                            Enseñanza escolar
+                        </h3>
+
+                        <p>
+                            Apoyo para estudiantes de enseñanza media,
+                            resolución de ejercicios, preparación de
+                            pruebas y comprensión de conceptos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="level">
+
+                        <h3>
+                            Preparación PAES
+                        </h3>
+
+                        <p>
+                            Revisión de contenidos, resolución de
+                            ejercicios y preparación enfocada en
+                            la prueba de acceso a la educación superior.
+                        </p>
+
+                    </div>
+
+
+                    <div class="level">
+
+                        <h3>
+                            Universidad
+                        </h3>
+
+                        <p>
+                            Física universitaria, resolución de problemas
+                            y apoyo en cursos que requieren herramientas
+                            matemáticas más avanzadas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- POR QUÉ -->
+
+        <section class="why">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        ¿Por qué tomar clases particulares de Física?
+                    </h2>
+
+                    <p>
+                        Una clase individual permite concentrarse
+                        directamente en las dificultades de cada estudiante.
+                    </p>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+
+                        <h3>
+                            Clases personalizadas
+                        </h3>
+
+                        <p>
+                            El contenido y ritmo de cada clase se adapta
+                            a tus conocimientos, objetivos y necesidades.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <h3>
+                            Resolución paso a paso
+                        </h3>
+
+                        <p>
+                            No se trata solamente de obtener la respuesta:
+                            trabajamos el razonamiento necesario para
+                            resolver problemas de Física.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <h3>
+                            Modalidad online
+                        </h3>
+
+                        <p>
+                            Estudia desde cualquier lugar de Chile
+                            utilizando una modalidad cómoda y flexible.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <h3>
+                            Enfoque en tus objetivos
+                        </h3>
+
+                        <p>
+                            Podemos trabajar preparación de pruebas,
+                            reforzamiento de contenidos, PAES o cursos
+                            universitarios.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTENIDO SEO -->
+
+        <section class="content">
+
+            <div class="content-box">
+
+                <h2>
+                    Clases particulares de Física online en Chile
+                </h2>
+
+                <p>
+                    Las clases particulares de Física online son una
+                    alternativa para estudiantes que necesitan reforzar
+                    contenidos, preparar evaluaciones o comprender mejor
+                    los conceptos fundamentales de la Física.
+                </p>
+
+                <p>
+                    Durante las clases se pueden abordar tanto los
+                    conceptos teóricos como la resolución de ejercicios.
+                    El objetivo es desarrollar una comprensión sólida
+                    que permita al estudiante enfrentarse de manera
+                    independiente a nuevos problemas.
+                </p>
+
 
                 <h3>
-                    Información
+                    Física para enseñanza media
                 </h3>
 
-                <a href="index.html#como-funciona">
-                    Cómo funciona
+                <p>
+                    Las clases pueden enfocarse en contenidos de Física
+                    de enseñanza media, incluyendo mecánica, fuerzas,
+                    energía, electricidad, ondas y otros contenidos
+                    presentes en los programas escolares.
+                </p>
+
+
+                <h3>
+                    Física para la PAES
+                </h3>
+
+                <p>
+                    Si estás preparando la PAES, las clases pueden
+                    complementar tu preparación mediante el repaso
+                    de contenidos y la resolución de ejercicios.
+                </p>
+
+                <p>
+                    También puedes visitar nuestra página de
+                    <a href="preparacion-paes.html"
+                       style="color:#2563eb;font-weight:700;">
+                        preparación PAES online
+                    </a>
+                    para conocer más sobre esta modalidad.
+                </p>
+
+
+                <h3>
+                    Física universitaria
+                </h3>
+
+                <p>
+                    También ofrecemos apoyo para estudiantes
+                    universitarios que necesitan reforzar conceptos,
+                    resolver problemas o preparar evaluaciones
+                    de cursos de Física.
+                </p>
+
+
+                <h3>
+                    Matemáticas para Física
+                </h3>
+
+                <p>
+                    Muchos problemas de Física requieren herramientas
+                    matemáticas. Si necesitas reforzar estos conocimientos,
+                    también puedes consultar nuestras
+                    <a href="clases-particulares-matematicas.html"
+                       style="color:#2563eb;font-weight:700;">
+                        clases particulares de Matemáticas
+                    </a>
+                    o nuestras
+                    <a href="clases-calculo.html"
+                       style="color:#2563eb;font-weight:700;">
+                        clases de Cálculo online
+                    </a>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA FINAL -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    ¿Necesitas ayuda con Física?
+                </h2>
+
+                <p>
+                    Escríbenos para consultar por clases particulares
+                    de Física online y cuéntanos qué necesitas preparar
+                    o reforzar.
+                </p>
+
+                <a href="contacto.html" class="button primary">
+                    Solicitar una clase
                 </a>
 
-                <a href="index.html#preguntas">
-                    Preguntas frecuentes
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+                © 2026 ClasesOnline
+            </div>
+
+            <div>
+
+                <a href="index.html">
+                    Inicio
                 </a>
 
-                <a href="#contacto">
+                &nbsp; | &nbsp;
+
+                <a href="contacto.html">
                     Contacto
                 </a>
 
             </div>
 
-
         </div>
 
-
-        <div class="copyright">
-
-            © 2026 Clases Particulares Online · Chile
-
-        </div>
-
-    </div>
-
-</footer>
-
+    </footer>
 
 </body>
 </html>
